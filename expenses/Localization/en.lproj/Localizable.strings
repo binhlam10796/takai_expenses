@@ -1,19 +1,92 @@
-/* 
-  Localizable.strings
-  expenses
+/*
+ Localizable.strings
+ expenses
 
-  Created by vcampus on 3/10/24.
-  
-*/
+ Created by vcampus on 3/10/24.
+ */
+
+// COMMON
+"ok_string" = "OK";
+"cancel_string" = "CANCEL";
+// CUSTOM ERROR
+"error_404" = "Error 404 - Page not found";
+"nil_data_msg" = "Data does not exist";
+"generic_localized_net_error_message" = "Local network error";
+"generic_error_message" = "General error";
+"no_content_found" = "No content found";
+"unauthorized_message" = "Unauthorized access";
+"badRequest_message" = "Invalid request";
+"not_found_message" = "Not found";
+"forbidden_message" = "Access forbidden";
+"user_not_found_message" = "User not found";
+"logout_error_message" = "Logout error";
+"login_error_message" = "Login error";
+"no_connection_error_message" = "No network connection";
+"url_request_nil" = "Invalid URL request";
+"no_local_data_found" = "Local data not found";
+"json_decode_error" = "JSON decoding error";
+"token_refresh_failed" = "Token refresh failed";
+
 // SPLASH VIEW CONTROLLER
 "splash_view_controller_title" = "EXPENSES";
 
 // LOGIN VIEW CONTROLLER
 "login_view_controller_title" = "LOGIN";
 "login_view_controller_email_title" = "Email";
-"login_view_controller_email_hint" = "Input email...";
+"login_view_controller_email_hint" = "Enter your email address...";
 "login_view_controller_password_title" = "Password";
-"login_view_controller_password_hint" = "Input password...";
+"login_view_controller_password_hint" = "Enter your password...";
 "login_view_controller_login_button" = "Login";
 "login_view_controller_create_account" = "Don't have an account";
-"login_view_controller_regiser" = "Sign Up";
+"login_view_controller_regiser" = "Register";
+
+// REGISTER VIEW CONTROLLER
+"register_view_controller_title" = "REGISTER";
+"register_view_controller_name_title" = "Full Name";
+"register_view_controller_name_hint" = "Enter your full name...";
+"register_view_controller_name_invalid" = "Full Name cannot be empty";
+"register_view_controller_email_title" = "Email";
+"register_view_controller_email_hint" = "Enter your email address...";
+"register_view_controller_email_invalid" = "Invalid email address";
+"register_view_controller_password_title" = "Password";
+"register_view_controller_password_hint" = "Enter your password...";
+"register_view_controller_password_invalid" = "Ensure your password is at least 8 characters long, including uppercase, lowercase, numbers, and special characters";
+"register_view_controller_register_button" = "Register";
+"register_view_controller_have_account" = "Already have an account";
+"register_view_controller_login" = "Login";
+
+// FIREBASE AUTH MANAGER
+"fam_email_already_exists" = "Email already in use";
+"fam_invalid_email" = "Invalid email";
+"fam_incorrect_password" = "Incorrect password";
+"fam_unknown_error" = "Unknown error, please try again";
+
+// HOME VIEW CONTROLLER
+"home_view_controller_title" = "Welcome back";
+"home_view_controller_money_unit" = "VND";
+
+// ADD EXPENSES CONTROLLER
+"add_expenses_view_controller_page_title_add" = "Add New Expense";
+"add_expenses_view_controller_page_title_edit" = "Edit Expense";
+"add_expenses_view_controller_title" = "Title";
+"add_expenses_view_controller_title_hint" = "Enter title...";
+"add_expenses_view_controller_title_invalid" = "Title cannot be empty";
+"add_expenses_view_controller_date" = "Expense Date";
+"add_expenses_view_controller_date_hint" = "Enter expense date...";
+"add_expenses_view_controller_date_invalid" = "Expense date cannot be empty";
+"add_expenses_view_controller_amount" = "Expense Amount";
+"add_expenses_view_controller_amount_hint" = "Enter expense amount...";
+"add_expenses_view_controller_amount_invalid" = "Expense amount cannot be empty";
+"add_expenses_view_controller_category" = "Category";
+"add_expenses_view_controller_category_hint" = "Select category...";
+"add_expenses_view_controller_category_invalid" = "Category cannot be empty";
+"add_expenses_view_controller_location" = "Location";
+"add_expenses_view_controller_location_hint" = "Enter location...";
+"add_expenses_view_controller_location_invalid" = "Location cannot be empty";
+"add_expenses_view_controller_notes" = "Notes";
+"add_expenses_view_controller_notes_hint" = "Enter notes...";
+"add_expenses_view_controller_notes_invalid" = "Notes cannot be empty";
+"add_expenses_view_controller_button_save" = "Save";
+"add_expenses_view_controller_button_edit" = "Update";
+"add_expenses_view_controller_add_category_title" = "Add New Category";
+"add_expenses_view_controller_add_category_hint" = "Enter a new category value...";
