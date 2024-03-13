@@ -101,7 +101,7 @@ This architecture aims to provide a scalable, modular, and maintainable structur
 
 ## Setting Up the Project
 
-1. Clone the repository from [GitHub](https://github.com/binhlam10796/takai_expenses).
+1. Clone the repository from [GitHub](https://github.com/binhlam10796/takai_expenses) or this [Google Drive](https://drive.google.com/file/d/1fZOXaOmPzH79FfApc0KhqML9j9GnoU3c/view?usp=sharing).
 2. Open the project in Xcode.
 3. Install dependencies using CocoaPods: `pod install`.
 4. Set up Firebase Authentication and replace the Firebase configuration files.
