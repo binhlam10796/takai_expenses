@@ -23,6 +23,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var expensesTableView: UITableView!
     @IBOutlet weak var addImageView: UIImageView!
+    @IBOutlet weak var filterButton: UIButton!
     
     // MARK: DI
     var router: HomeRouterInput?
@@ -83,6 +84,42 @@ class HomeViewController: BaseViewController {
         pieChartDataSet.colors = colors
     }
     
+    private func showFilterOptions() {
+        let alertController = UIAlertController(title: "Filter Options", message: nil, preferredStyle: .actionSheet)
+
+        let sortByDateAction = UIAlertAction(title: "Sort by Date", style: .default) { [weak self] _ in
+            self?.homeVM?.sortExpensesByDate()
+        }
+
+        let filterByCategoryAction = UIAlertAction(title: "Filter by Category", style: .default) { [weak self] _ in
+            self?.showCategoryOptions()
+        }
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+        alertController.addAction(sortByDateAction)
+        alertController.addAction(filterByCategoryAction)
+        alertController.addAction(cancelAction)
+
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    private func showCategoryOptions() {
+        let alertController = UIAlertController(title: "Select Category", message: nil, preferredStyle: .actionSheet)
+        
+        for category in homeVM?.categiries?.categories ?? [] {
+            let action = UIAlertAction(title: category, style: .default) { [weak self] _ in
+                self?.homeVM?.fetchExpensesList(date: "", category: category)
+            }
+            alertController.addAction(action)
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
     // MARK: ACTION
     override func actionHandler() {
         let addTap = UITapGestureRecognizer(target: self, action: #selector(didTapAdd))
@@ -92,6 +129,10 @@ class HomeViewController: BaseViewController {
     
     @objc func didTapAdd() {
         router?.navigateToAddExpensesView(isEdit: false, categories: homeVM?.categiries?.categories ?? [], requestData: nil)
+    }
+    
+    @IBAction func didTapFilter(_ sender: Any) {
+        showFilterOptions()
     }
     
     // MARK: DATA HANDLER
@@ -119,9 +160,14 @@ class HomeViewController: BaseViewController {
                     setupChart(dataPoints: categories, values: amounts)
                 }
                 break
+            case .deletedExpenses:
+                DispatchQueue.main.async {
+                    self.displayMessage(message: "Delele expenses success")
+                }
+                break
             case .loadingFailureWithMessage(let message):
                 DispatchQueue.main.async {
-                    self.displayMessage(message: message)
+                    self.displayMessage(message: "There was an error")
                 }
                 break
             default:
@@ -131,8 +177,8 @@ class HomeViewController: BaseViewController {
     }
 }
 
-// MARK: UITABLEVIEW DELEGATE
-extension HomeViewController: UITableViewDataSource {
+// MARK: UITableViewDataSource && ExpensesTableViewCellDelegate
+extension HomeViewController: UITableViewDataSource, ExpensesTableViewCellDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return homeVM?.expensesList?.count ?? 0
     }
@@ -142,6 +188,7 @@ extension HomeViewController: UITableViewDataSource {
             guard let viewModel = homeVM, let expenses = viewModel.expensesList?[indexPath.row] else {
                 return UITableViewCell()
             }
+            cell.delegate = self
             cell.setupExpensesRow(expenses)
             return cell
         }
@@ -154,8 +201,18 @@ extension HomeViewController: UITableViewDataSource {
         }
         router?.navigateToAddExpensesView(isEdit: true, categories: viewModel.categiries?.categories ?? [], requestData: expenses)
     }
+    
+    func expensesTableViewCellDidTapTrash(_ cell: ExpensesTableViewCell)  {
+        if let indexPath = expensesTableView.indexPath(for: cell) {
+            guard let viewModel = homeVM, let expenses = viewModel.expensesList?[indexPath.row] else {
+                return
+            }
+            viewModel.deleteExpenses(expensesId: "\(expenses.id ?? 1)")
+        }
+    }
 }
 
+// MARK: UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -164,5 +221,25 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return ExpensesTableViewCell.DEFAULT_HEIGHT
+    }
+}
+
+// MARK: UIPickerViewDelegate && UIPickerViewDataSource
+extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return homeVM?.categiries?.categories?.count ?? 0
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return homeVM?.categiries?.categories?[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        homeVM?.fetchExpensesList(date: "", category: homeVM?.categiries?.categories?[row] ?? "")
     }
 }

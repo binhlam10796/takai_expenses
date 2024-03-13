@@ -169,7 +169,6 @@ class AddExpensesViewController: BaseViewController {
         
         for category in categories ?? [] {
             let action = UIAlertAction(title: category, style: .default) { [weak self] _ in
-                // Xử lý khi người dùng chọn một category
                 self?.categoryTextfield.text = category
             }
             alertController.addAction(action)

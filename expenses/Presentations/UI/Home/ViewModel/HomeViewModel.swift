@@ -52,6 +52,25 @@ class HomeViewModel: HomeViewModelDelegate {
         }
     }
     
+    func sortExpensesByDate() {
+        expensesList = expensesList?.sorted { (expense1, expense2) -> Bool in
+            guard let date1String = expense1.date, let date2String = expense2.date else {
+                return false
+            }
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            if let date1 = dateFormatter.date(from: date1String), let date2 = dateFormatter.date(from: date2String) {
+                return date1 > date2
+            }
+            
+            return false
+        }
+        
+        status.send(.expensesLoaded)
+    }
+    
     func fechStatistics() {
         Task {
             do {
@@ -62,6 +81,22 @@ class HomeViewModel: HomeViewModelDelegate {
                 
                 self.statistics = data
                 status.send(.statisticsLoaded)
+                
+            } catch(_) {
+                status.send(.loadingFailureWithMessage(message: ""))
+            }
+        }
+    }
+    
+    func deleteExpenses(expensesId: String) {
+        Task {
+            do {
+                guard let data = try await homeUseCase?.deleteExpense(expensesId: expensesId) else {
+                    status.send(.loadingFailureWithMessage(message: ""))
+                    return
+                }
+                
+                status.send(.deletedExpenses)
                 
             } catch(_) {
                 status.send(.loadingFailureWithMessage(message: ""))

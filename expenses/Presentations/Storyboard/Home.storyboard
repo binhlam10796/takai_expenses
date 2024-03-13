@@ -53,6 +53,18 @@
                                     <constraint firstAttribute="height" constant="70" id="mZA-ML-0gv"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXp-32-DFx">
+                                <rect key="frame" x="355" y="67" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CMa-Tg-axr"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ryn-ky-ZLR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="img_filter"/>
+                                <connections>
+                                    <action selector="didTapFilter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IdI-HW-gjv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,6 +77,7 @@
                             <constraint firstItem="Kwq-9s-opR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="KyU-Vh-oni"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OkW-nm-GEk" secondAttribute="bottom" constant="16" id="N3P-zl-EYs"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OkW-nm-GEk" secondAttribute="trailing" constant="16" id="Qqa-iJ-MsX"/>
+                            <constraint firstItem="dXp-32-DFx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="U10-Hq-pQE"/>
                             <constraint firstItem="kmw-2H-85m" firstAttribute="top" secondItem="wmo-TD-8Is" secondAttribute="bottom" constant="8" id="VEO-WZ-Upa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7fO-iB-LGD" secondAttribute="trailing" constant="8" id="Vc8-ZH-TqM"/>
                             <constraint firstItem="Kwq-9s-opR" firstAttribute="top" secondItem="Z43-Up-gbo" secondAttribute="bottom" constant="8" id="W8i-Dd-CzH"/>
@@ -72,12 +85,14 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kmw-2H-85m" secondAttribute="trailing" constant="16" id="Wy5-7y-Lf2"/>
                             <constraint firstItem="wmo-TD-8Is" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="YqW-IT-KPn"/>
                             <constraint firstItem="Z43-Up-gbo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="xOj-1M-ITR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dXp-32-DFx" secondAttribute="trailing" constant="8" id="xbP-Tm-Nd0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addImageView" destination="OkW-nm-GEk" id="Qj2-Hd-C3a"/>
                         <outlet property="emailLabel" destination="wmo-TD-8Is" id="car-xE-Nqa"/>
                         <outlet property="expensesTableView" destination="7fO-iB-LGD" id="1xm-dv-G1K"/>
+                        <outlet property="filterButton" destination="dXp-32-DFx" id="1qB-8g-W8Y"/>
                         <outlet property="nameLabel" destination="Kwq-9s-opR" id="Xjq-Kg-czG"/>
                         <outlet property="pieChartView" destination="kmw-2H-85m" id="Ov0-0a-iQC"/>
                         <outlet property="titleLabel" destination="Z43-Up-gbo" id="dRv-K5-SWj"/>
@@ -90,6 +105,7 @@
     </scenes>
     <resources>
         <image name="img_add_button" width="64" height="64"/>
+        <image name="img_filter" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

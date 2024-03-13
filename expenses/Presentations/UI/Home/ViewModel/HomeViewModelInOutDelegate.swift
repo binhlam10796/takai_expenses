@@ -14,6 +14,7 @@ enum HomeViewModelStatus {
     case expensesLoaded
     case categoriesLoaded
     case statisticsLoaded
+    case deletedExpenses
     case loadingFailureWithMessage(message: String)
 }
 
@@ -22,6 +23,8 @@ protocol HomeViewModelInputDelegate {
     func fetchExpensesList(date: String, category: String)
     func fetchCategories()
     func fechStatistics()
+    func deleteExpenses(expensesId: String)
+    func sortExpensesByDate()
 }
 
 protocol HomeViewModelOuputDelegate {

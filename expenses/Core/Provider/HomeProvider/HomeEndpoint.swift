@@ -23,7 +23,13 @@ enum HomeEndpoint: APIEndpoint {
     
     var path: String {
         switch self {
-        case .fetchExpensesList, .createExpenses:
+        case .fetchExpensesList(_, let category):
+            if (category.isEmpty) {
+                return "expenses"
+            } else {
+                return "expenses/\(category)"
+            }
+        case .createExpenses:
             return "expenses"
         case .editExpenses(_, let expensesId):
             return "expenses/\(expensesId)"

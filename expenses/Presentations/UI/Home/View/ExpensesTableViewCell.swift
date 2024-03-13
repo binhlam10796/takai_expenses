@@ -13,6 +13,7 @@ class ExpensesTableViewCell: UITableViewCell {
     static let IDENTIFIER = "expenses_cell"
     static let XIB_NAME = "ExpensesTableViewCell"
     static let DEFAULT_HEIGHT: CGFloat = 160.0
+    weak var delegate: ExpensesTableViewCellDelegate?
     
     // MARK: OUTLET
     @IBOutlet weak var titleLabel: UILabel!
@@ -36,12 +37,24 @@ class ExpensesTableViewCell: UITableViewCell {
         titleLabel.textColor = Palette.color0D47A1
         notesLabel.textColor = Palette.colorFF0000
         locationLabel.textColor = Palette.colorFCD303
+        
+        actionHandler()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    private func actionHandler() {
+        let trashTap = UITapGestureRecognizer(target: self, action: #selector(didTapTrash))
+        trashImageView.isUserInteractionEnabled = true
+        trashImageView.addGestureRecognizer(trashTap)
+    }
+    
+    @objc func didTapTrash() {
+        delegate?.expensesTableViewCellDidTapTrash(self)
     }
     
     func setupExpensesRow(_ withData: ExpensesListResponse) {
@@ -53,3 +66,8 @@ class ExpensesTableViewCell: UITableViewCell {
         notesLabel.text = "Notes: \(withData.notes ?? "")"
     }
 }
+
+protocol ExpensesTableViewCellDelegate: AnyObject {
+    func expensesTableViewCellDidTapTrash(_ cell: ExpensesTableViewCell)
+}
+
