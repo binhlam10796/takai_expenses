@@ -2,6 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>App name</key>
+	<string>$(APP_NAME)</string>
+	<key>Base url</key>
+	<string>$(BASE_URL)</string>
+	<key>Network request hours delta</key>
+	<string>$(NETWORK_REQUEST_HOURS_DELTA)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Outfit-Black.ttf</string>
+		<string>Outfit-Bold.ttf</string>
+		<string>Outfit-ExtraBold.ttf</string>
+		<string>Outfit-ExtraLight.ttf</string>
+		<string>Outfit-Light.ttf</string>
+		<string>Outfit-Medium.ttf</string>
+		<string>Outfit-Regular.ttf</string>
+		<string>Outfit-SemiBold.ttf</string>
+		<string>Outfit-Thin.ttf</string>
+		<string>Rowdies-Bold.ttf</string>
+		<string>Rowdies-Regular.ttf</string>
+		<string>Rowdies-Light.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

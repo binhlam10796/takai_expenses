@@ -5,4 +5,88 @@
   Created by vcampus on 3/10/24.
   
 */
-"splash_view_controller_title" = "EXPENSES";
+// COMMON
+"ok_string" = "ĐỒNG Ý";
+"cancel_string" = "HUỶ";
+// CUSTOM ERROR
+"error_404" = "Lỗi 404 - Không tìm thấy trang";
+"nil_data_msg" = "Dữ liệu không tồn tại";
+"generic_localized_net_error_message" = "Lỗi mạng cục bộ";
+"generic_error_message" = "Lỗi chung";
+"no_content_found" = "Không có nội dung";
+"unauthorized_message" = "Không có quyền truy cập";
+"badRequest_message" = "Yêu cầu không hợp lệ";
+"not_found_message" = "Không tìm thấy";
+"forbidden_message" = "Từ chối truy cập";
+"user_not_found_message" = "Người dùng không tồn tại";
+"logout_error_message" = "Lỗi đăng xuất";
+"login_error_message" = "Lỗi đăng nhập";
+"no_connection_error_message" = "Không có kết nối mạng";
+"url_request_nil" = "Yêu cầu URL không hợp lệ";
+"no_local_data_found" = "Không tìm thấy dữ liệu địa phương";
+"json_decode_error" = "Lỗi giải mã JSON";
+"token_refresh_failed" = "Làm mới mã thông báo thất bại";
+
+// SPLASH VIEW CONTROLLER
+"splash_view_controller_title" = "CHI TIÊU";
+
+// LOGIN VIEW CONTROLLER
+"login_view_controller_title" = "ĐĂNG NHẬP";
+"login_view_controller_email_title" = "Email";
+"login_view_controller_email_hint" = "Nhập địa chỉ email...";
+"login_view_controller_password_title" = "Mật khẩu";
+"login_view_controller_password_hint" = "Nhập mật khẩu...";
+"login_view_controller_login_button" = "Đăng nhập";
+"login_view_controller_create_account" = "Chưa có tài khoản";
+"login_view_controller_regiser" = "Đăng ký";
+
+// REGISTER VIEW CONTROLLER
+"register_view_controller_title" = "ĐĂNG KÝ";
+"register_view_controller_name_title" = "Họ & Tên";
+"register_view_controller_name_hint" = "Nhập Họ & Tên...";
+"register_view_controller_name_invalid" = "Họ & Tên không thể trống";
+"register_view_controller_email_title" = "Email";
+"register_view_controller_email_hint" = "Nhập địa chỉ email...";
+"register_view_controller_email_invalid" = "Địa chỉ email không hợp lệ";
+"register_view_controller_password_title" = "Mật khẩu";
+"register_view_controller_password_hint" = "Nhập mật khẩu...";
+"register_view_controller_password_invalid" = "Đảm bảo mật khẩu của bạn có ít nhất 8 ký tự, bao gồm chữ in hoa, chữ thường, số và ký tự đặc biệt";
+"register_view_controller_register_button" = "Đăng ký";
+"register_view_controller_have_account" = "Đã có tài khoản";
+"register_view_controller_login" = "Đăng nhập";
+
+// FIREBASE AUTH MANAGER
+"fam_email_already_exists" = "Email đã được sử dụng";
+"fam_invalid_email" = "Email không hợp lệ";
+"fam_incorrect_password" = "Mật khẩu không chính xác";
+"fam_unknown_error" = "Lỗi không xác định, vui lòng thử lại";
+
+// HOME VIEW CONTROLLER
+"home_view_controller_title" = "Chào mừng trở lại";
+"home_view_controller_money_unit" = "VNĐ";
+
+// ADD EXPENSES CONTROLLER
+"add_expenses_view_controller_page_title_add" = "Thêm mới chi tiêu";
+"add_expenses_view_controller_page_title_edit" = "Sửa đổi chi tiêu";
+"add_expenses_view_controller_title" = "Tiêu đề";
+"add_expenses_view_controller_title_hint" = "Nhập tiêu đề...";
+"add_expenses_view_controller_title_invalid" = "Tiêu đề không thể trống";
+"add_expenses_view_controller_date" = "Ngày chi tiêu";
+"add_expenses_view_controller_date_hint" = "Nhập ngày chi tiêu ...";
+"add_expenses_view_controller_date_invalid" = "Ngày chi tiêu không thể trống";
+"add_expenses_view_controller_amount" = "Số tiền chi tiêu";
+"add_expenses_view_controller_amount_hint" = "Nhập số tiền chi tiêu ...";
+"add_expenses_view_controller_amount_invalid" = "Số tiền chi tiêu không thể trống";
+"add_expenses_view_controller_category" = "Phân loại";
+"add_expenses_view_controller_category_hint" = "Chọn phân loại ...";
+"add_expenses_view_controller_category_invalid" = "Phân loại không thể trống";
+"add_expenses_view_controller_location" = "Vị trí";
+"add_expenses_view_controller_location_hint" = "Nhập vị trí ...";
+"add_expenses_view_controller_location_invalid" = "Vị trí không thể trống";
+"add_expenses_view_controller_notes" = "Ghi chú";
+"add_expenses_view_controller_notes_hint" = "Nhập ghi chú ...";
+"add_expenses_view_controller_notes_invalid" = "Ghi chú không thể trống";
+"add_expenses_view_controller_button_save" = "Lưu";
+"add_expenses_view_controller_button_edit" = "Cập nhật";
+"add_expenses_view_controller_add_category_title" = "Thêm mới phân loại";
+"add_expenses_view_controller_add_category_hint" = "Nhập giá trị phân loại mới...";

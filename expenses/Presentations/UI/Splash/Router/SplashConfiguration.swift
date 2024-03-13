@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import Swinject
+
+protocol SplashConfiguratorInput {
+    func configure() -> SplashViewController
+}
+
+class SplashConfigurator: SplashConfiguratorInput {
+    
+    func configure() -> SplashViewController {
+        guard let controller = Assembler.sharedAssembler.resolver.resolve(SplashViewController.self) else {
+            return SplashViewController()
+        }
+        return controller
+    }
+}

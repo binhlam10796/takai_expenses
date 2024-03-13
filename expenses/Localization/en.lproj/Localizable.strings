@@ -5,4 +5,15 @@
   Created by vcampus on 3/10/24.
   
 */
+// SPLASH VIEW CONTROLLER
 "splash_view_controller_title" = "EXPENSES";
+
+// LOGIN VIEW CONTROLLER
+"login_view_controller_title" = "LOGIN";
+"login_view_controller_email_title" = "Email";
+"login_view_controller_email_hint" = "Input email...";
+"login_view_controller_password_title" = "Password";
+"login_view_controller_password_hint" = "Input password...";
+"login_view_controller_login_button" = "Login";
+"login_view_controller_create_account" = "Don't have an account";
+"login_view_controller_regiser" = "Sign Up";

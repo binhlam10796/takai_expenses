@@ -10,5 +10,6 @@ import UIKit
 class Animation {
     
     static let animSplash: String = "anim_splash"
+    static let animLoading: String = "anim_loading"
 
 }

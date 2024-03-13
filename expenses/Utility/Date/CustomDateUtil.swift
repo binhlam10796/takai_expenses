@@ -62,7 +62,7 @@ class CustomDateUtils: NSObject {
         guard let lastUpdateDate = formatter.date(from: lastUpdate) else {
             return true
         }
-
+        
         let dataComponents = actualCalendar.dateComponents([.hour, .day], from: lastUpdateDate, to: currentDate)
         
         if( dataComponents.hour ?? 0 <= API.networkHoursDelta && dataComponents.day ?? 0 == 0 ) {

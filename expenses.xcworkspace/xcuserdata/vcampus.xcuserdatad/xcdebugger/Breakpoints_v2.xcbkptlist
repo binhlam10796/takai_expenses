@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4463CC96-1F96-4E1E-A0D1-B95DB2857E24"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96CD0AFA-741D-40EE-8E14-3D90702AA878"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "editExpenses(requestData:expensesId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "96CD0AFA-741D-40EE-8E14-3D90702AA878 - d81aadd475478075"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "314">
+               </Location>
+               <Location
+                  uuid = "96CD0AFA-741D-40EE-8E14-3D90702AA878 - 60c87eb94f9c4c77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  uuid = "96CD0AFA-741D-40EE-8E14-3D90702AA878 - b76169d0c300ee76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "editExpenses(requestData:expensesId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - d81aadd475478054"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "469">
+               </Location>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - 18371bf975d0c43f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - 60c87eb94f9c4c77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - 60c87eb94f9c4c56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "259">
+               </Location>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - b76169d0c300ee76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "98">
+               </Location>
+               <Location
+                  uuid = "820D05C5-6F42-4EF7-80F7-F68F3FECD5CD - b76169d0c300ee57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for expenses.HomeProvider.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) async throws -&gt; Swift.Dictionary&lt;Swift.String, Swift.String&gt;"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Core/Provider/HomeProvider/HomeProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "258">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4241EF2F-BE3A-4A66-928A-409C2C47BFFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "editExpenses(requestData:expensesId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4241EF2F-BE3A-4A66-928A-409C2C47BFFA - 5f9b3f81a0a959d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in expenses.AddExpensesViewModel.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) -&gt; ()"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "511">
+               </Location>
+               <Location
+                  uuid = "4241EF2F-BE3A-4A66-928A-409C2C47BFFA - 1a23209f44879557"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in expenses.AddExpensesViewModel.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) -&gt; ()"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "309">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F7950E7-2DD4-4A62-8FAF-25D3B4B80EC4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "editExpenses(requestData:expensesId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F7950E7-2DD4-4A62-8FAF-25D3B4B80EC4 - 5f9b3f81a0a95849"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in expenses.AddExpensesViewModel.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) -&gt; ()"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "423">
+               </Location>
+               <Location
+                  uuid = "0F7950E7-2DD4-4A62-8FAF-25D3B4B80EC4 - 1a23209f448794cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in expenses.AddExpensesViewModel.editExpenses(requestData: expenses.UpdateExpensesRequest, expensesId: Swift.String) -&gt; ()"
+                  moduleName = "expenses"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vcampus/Development/EXPENSES_iOS/expenses/expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "221">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29300C29-CCE8-4648-9036-BBA0662B4C70"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "expenses/Presentations/UI/AddExpenses/ViewModel/AddExpensesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "editExpenses(requestData:expensesId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

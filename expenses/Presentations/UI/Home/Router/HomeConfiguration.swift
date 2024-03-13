@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import Swinject
+
+protocol HomeConfiguratorInput {
+    func configure() -> HomeViewController
+}
+
+class HomeConfigurator: HomeViewController {
+    
+    func configure() -> HomeViewController {
+        guard let controller = Assembler.sharedAssembler.resolver.resolve(HomeViewController.self) else {
+            return HomeViewController()
+        }
+        return controller
+    }
+}

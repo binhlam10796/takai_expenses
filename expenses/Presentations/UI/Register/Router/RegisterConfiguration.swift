@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import Swinject
+
+protocol RegisterConfiguratorInput {
+    func configure() -> RegisterViewController
+}
+
+class RegisterConfigurator: RegisterViewController {
+    
+    func configure() -> RegisterViewController {
+        guard let controller = Assembler.sharedAssembler.resolver.resolve(RegisterViewController.self) else {
+            return RegisterViewController()
+        }
+        return controller
+    }
+}

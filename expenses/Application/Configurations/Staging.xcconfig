@@ -7,3 +7,10 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = EXPENSES (STAG)
+APP_VERSION = 0.0.1
+APP_BUNDLE_ID = com.takai.expenses-stag
+
+BASE_URL = http:\/\/api.intensifystudio.com/development
+NETWORK_REQUEST_HOURS_DELTA = 12
